@@ -77,5 +77,11 @@ cd ../server && npm install
     <li>Future revenue forecasting with Linear Regression</li>
   </ul>
 
+  <h2>🎯 Conclusion</h2>
+<p>
+The AI-Finance Dashboard is a full-stack, data-driven application that turns historical financial data into actionable insights.
+It combines modern frontend technologies with a robust backend and machine learning forecasting, providing businesses with interactive analytics to support strategic decision-making.
+</p>
+
 </body>
 </html>
