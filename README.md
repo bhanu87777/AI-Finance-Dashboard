@@ -1,9 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>AI-Finance Dashboard</title>
-</head>
 <body>
 
   <h1>AI-Finance Dashboard</h1>
@@ -72,7 +68,6 @@ cd ../server && npm install
     <li>Run frontend:
       <pre>cd client && npm start</pre>
     </li>
-    <li>Visit <a href="http://localhost:3000">http://localhost:3000</a> to view the dashboard</li>
   </ol>
 
   <h2>📊 Example Insights</h2>
@@ -81,15 +76,6 @@ cd ../server && npm install
     <li>Campaign performance vs target</li>
     <li>Future revenue forecasting with Linear Regression</li>
   </ul>
-
-  <h2>🤝 Contributing</h2>
-  <p>
-    Contributions, issues, and feature requests are welcome!<br>
-    Feel free to fork this repo and submit a pull request.
-  </p>
-
-  <h2>📜 License</h2>
-  <p>This project is licensed under the MIT License.</p>
 
 </body>
 </html>
