@@ -9,6 +9,22 @@
     It visualizes interactive charts (e.g., Profit and Revenue, Campaign and Target) using <strong>Recharts</strong> and leverages a <strong>Linear Regression Machine Learning model</strong> to forecast future company revenue, turning historical data into actionable insights for strategic decision-making.
   </p>
 
+  <h2>📸 Dashboard Preview</h2>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
+    <img src="image1.png" alt="Dashboard Overview" style="width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+    <img src="image2.png" alt="Analytics Chart" style="width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  </div>
+
+  <h2>📊 Example Insights</h2>
+  <ul>
+    <li>Revenue vs Profit over time</li>
+    <li>Revenue vs Expense over time</li>
+    <li>operational vs non operational cost over time</li>
+    <li>Revenue month by month trends over time</li>
+    <li>Campaign performance vs target</li>
+    <li>Future revenue forecasting with Linear Regression</li>
+  </ul>
+
   <h2>🚀 Features</h2>
   <ul>
     <li>Responsive financial dashboard UI built with Material-UI</li>
@@ -58,30 +74,23 @@ AI-Finance-Dashboard/
     <li>Set up environment variables (e.g., MongoDB URI, PORT)</li>
     <li>Install dependencies:
       <pre>
-cd client && npm install
-cd ../server && npm install
+        cd client && npm install
+        cd ../server && npm install
       </pre>
     </li>
     <li>Run backend:
-      <pre>cd server && npm start</pre>
+      <pre>cd server && npm run dev</pre>
     </li>
     <li>Run frontend:
-      <pre>cd client && npm start</pre>
+      <pre>cd client && npm run dev</pre>
     </li>
   </ol>
 
-  <h2>📊 Example Insights</h2>
-  <ul>
-    <li>Profit vs Revenue trends over time</li>
-    <li>Campaign performance vs target</li>
-    <li>Future revenue forecasting with Linear Regression</li>
-  </ul>
-
   <h2>🎯 Conclusion</h2>
-<p>
-The AI-Finance Dashboard is a full-stack, data-driven application that turns historical financial data into actionable insights.
-It combines modern frontend technologies with a robust backend and machine learning forecasting, providing businesses with interactive analytics to support strategic decision-making.
-</p>
+  <p>
+    The AI-Finance Dashboard is a full-stack, data-driven application that turns historical financial data into actionable insights.
+    It combines modern frontend technologies with a robust backend and machine learning forecasting, providing businesses with interactive analytics to support strategic decision-making.
+  </p>
 
 </body>
 </html>
