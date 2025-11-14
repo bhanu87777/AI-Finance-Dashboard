@@ -9,11 +9,21 @@
     It visualizes interactive charts (e.g., Profit and Revenue, Campaign and Target) using <strong>Recharts</strong> and leverages a <strong>Linear Regression Machine Learning model</strong> to forecast future company revenue, turning historical data into actionable insights for strategic decision-making.
   </p>
 
-  <h2>📸 Dashboard Preview</h2>
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0;">
-    <img src="image1.png" alt="Dashboard Overview" style="width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-    <img src="image2.png" alt="Analytics Chart" style="width: 45%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+<h2>📸 Dashboard Preview</h2>
+
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin: 20px 0;">
+
+  <div style="text-align: center;">
+    <h3>1️⃣ Dashboard Overview</h3>
+    <img src="Images/Dashboard.png" alt="Dashboard Overview" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   </div>
+
+  <div style="text-align: center;">
+    <h3>2️⃣ Prediction Analytics</h3>
+    <img src="Images/Prediction.png" alt="Analytics Chart" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  </div>
+
+</div>
 
   <h2>📊 Example Insights</h2>
   <ul>
@@ -68,23 +78,51 @@ AI-Finance-Dashboard/
 └── .gitignore
   </pre>
 
-  <h2>⚡ Getting Started</h2>
-  <ol>
-    <li>Clone the repository</li>
-    <li>Set up environment variables (e.g., MongoDB URI, PORT)</li>
-    <li>Install dependencies:
-      <pre>
-        cd client && npm install
-        cd ../server && npm install
-      </pre>
-    </li>
-    <li>Run backend:
-      <pre>cd server && npm run dev</pre>
-    </li>
-    <li>Run frontend:
-      <pre>cd client && npm run dev</pre>
-    </li>
-  </ol>
+<h2>🏗️ Project Architecture & Data Flow</h2>
+
+<h3>1️⃣ Architecture Diagram</h3>
+<img src="Images/Architecture.png" alt="Architecture Diagram" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
+
+<h3>2️⃣ Server Architecture</h3>
+<img src="Images/Server Architecture.png" alt="Server Architecture" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
+
+<h3>3️⃣ Data Flow Diagram</h3>
+<img src="Images/DataFlow.png" alt="Data Flow Diagram" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
+
+<h3>4️⃣ Database Tables</h3>
+<img src="Images/Database Tables.png" alt="Database Tables" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
+
+<h2>⚡ Getting Started</h2>
+
+<ol>
+  <li>
+    <strong>Clone the repository:</strong><br>
+    <pre>git clone &lt;repository-url&gt;</pre>
+  </li>
+
+  <li>
+    <strong>Set up environment variables:</strong><br>
+    For example: MongoDB URI, PORT
+  </li>
+
+  <li>
+    <strong>Install dependencies:</strong>
+    <pre>
+cd client && npm install
+cd ../server && npm install
+    </pre>
+  </li>
+
+  <li>
+    <strong>Run backend:</strong>
+    <pre>cd server && npm run dev</pre>
+  </li>
+
+  <li>
+    <strong>Run frontend:</strong>
+    <pre>cd client && npm run dev</pre>
+  </li>
+</ol>
 
   <h2>🎯 Conclusion</h2>
   <p>
