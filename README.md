@@ -6,6 +6,7 @@
   <p>
     <strong>AI-Finance Dashboard:</strong> Built a full-stack responsive Financial Analytics Dashboard using KPI, product, and transaction models.
     Application was developed with <strong>React + TypeScript + Material-UI + Redux Toolkit</strong> on the frontend and <strong>Node.js/Express + MongoDB</strong> on the backend.
+    User authentication (Login/Signup) was implemented using <strong>Firebase Authentication</strong> for secure and seamless access management.
     It visualizes interactive charts (e.g., Profit and Revenue, Campaign and Target) using <strong>Recharts</strong> and leverages a <strong>Linear Regression Machine Learning model</strong> to forecast future company revenue, turning historical data into actionable insights for strategic decision-making.
   </p>
 
@@ -29,8 +30,8 @@
   <ul>
     <li>Revenue vs Profit over time</li>
     <li>Revenue vs Expense over time</li>
-    <li>operational vs non operational cost over time</li>
-    <li>Revenue month by month trends over time</li>
+    <li>Operational vs non-operational cost over time</li>
+    <li>Revenue month-by-month trends</li>
     <li>Campaign performance vs target</li>
     <li>Future revenue forecasting with Linear Regression</li>
   </ul>
@@ -43,11 +44,12 @@
     <li>Redux Toolkit for state management</li>
     <li>Backend APIs built with Express and Mongoose</li>
     <li>Machine Learning: Linear Regression for revenue forecasting</li>
+    <li>Secure user login & signup using <strong>Firebase Authentication</strong></li>
   </ul>
 
   <h2>🛠️ Tech Stack</h2>
   <ul>
-    <li><strong>Frontend:</strong> React, TypeScript, Material-UI, Redux Toolkit, Recharts</li>
+    <li><strong>Frontend:</strong> React, TypeScript, Material-UI, Redux Toolkit, Recharts, Firebase Authentication</li>
     <li><strong>Backend:</strong> Node.js, Express.js, Mongoose</li>
     <li><strong>Database:</strong> MongoDB (Atlas)</li>
     <li><strong>Machine Learning:</strong> Linear Regression (JavaScript/ML integration)</li>
@@ -56,26 +58,21 @@
   <h2>📂 Project Structure</h2>
   <pre>
 AI-Finance-Dashboard/
-├── client/                 # Frontend (React + TypeScript)
-│   ├── public/             # Static assets
+├── client/                        # Frontend (React + TypeScript)
+│   ├── public/                    # Static assets
 │   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── features/       # Redux slices and state logic
-│   │   ├── pages/          # Dashboard pages
-│   │   ├── charts/         # Recharts components
-│   │   └── App.tsx         # Main App entry
+│   │   ├── components/            # Reusable UI components
+│   │   ├── firebase/              # Firebase config & auth logic
+│   │   └── App.tsx                # Main App entry
 │   └── package.json
 │
-├── server/                 # Backend (Node.js + Express)
-│   ├── models/             # Mongoose models (KPI, Products, Transactions)
-│   ├── routes/             # Express routes (API endpoints)
-│   ├── controllers/        # Business logic for APIs
-│   ├── index.js            # Server entry point
+├── server/                        # Backend (Node.js + Express)
+│   ├── models/                    # Mongoose models (KPI, Products, Transactions)
+│   ├── routes/                    # Express routes (API endpoints)
+│   ├── index.js                   # Server entry point
 │   └── package.json
 │
-├── README.html             # Project documentation
-├── package.json            # Root config (optional for monorepo)
-└── .gitignore
+├── README.html                    # Project documentation
   </pre>
 
 <h2>🏗️ Project Architecture & Data Flow</h2>
@@ -99,7 +96,7 @@ AI-Finance-Dashboard/
 
   <li>
     <strong>Set up environment variables:</strong><br>
-    For example: MongoDB URI, PORT
+    For example: MongoDB URI, PORT, Firebase API keys
   </li>
 
   <li>
@@ -124,7 +121,8 @@ cd ../server && npm install
   <h2>🎯 Conclusion</h2>
   <p>
     The AI-Finance Dashboard is a full-stack, data-driven application that turns historical financial data into actionable insights.
-    It combines modern frontend technologies with a robust backend and machine learning forecasting, providing businesses with interactive analytics to support strategic decision-making.
+    It combines modern frontend technologies with a robust backend and machine learning forecasting.
+    The addition of <strong>Firebase Authentication</strong> ensures secure and scalable user login and signup functionality, making the platform production-ready.
   </p>
 
 </body>
