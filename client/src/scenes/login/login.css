@@ -1,0 +1,104 @@
+/* Main wrapper */
+.login {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glass morphism box */
+.login-form {
+  width: 380px;
+  padding: 2.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Input fields */
+.login-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: #d1d5db;
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #4f46e5;
+}
+
+/* Remember + help row */
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.remember label {
+  margin-left: 6px;
+}
+
+/* Switch between signup/login */
+.form-switch {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+.form-switch span {
+  color: #60a5fa;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-switch span:hover {
+  text-decoration: underline;
+}
+
+/* Loading UI */
+.login-spinner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}

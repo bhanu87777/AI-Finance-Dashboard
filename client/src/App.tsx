@@ -1,15 +1,31 @@
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useMemo } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { themeSettings } from "./theme";
 import { Box, CssBaseline } from "@mui/material";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Navbar from "./scenes/navbar";
 import DashBoard from "./scenes/dashboard";
 import { GlobalStyles } from "@mui/material";
 import Predictions from "./scenes/predictions";
+import Login from "./scenes/login/Login";
+import { auth } from "./firebase";
+import { onAuthStateChanged } from "firebase/auth";
 
 function App() {
   const theme = useMemo(() => createTheme(themeSettings), []);
+  const [user, setUser] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  // Check if user is logged in
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      setLoading(false);
+    });
+    return () => unsub();
+  }, []);
+
+  if (loading) return <div style={{ color: "white" }}>Loading...</div>;
 
   return (
     <>
@@ -29,15 +45,33 @@ function App() {
           },
         }}
       />
+
       <BrowserRouter>
         <ThemeProvider theme={theme}>
           <div className="app">
             <CssBaseline />
             <Box width="100%" height="100%" padding="1rem 2rem 4rem 2rem">
-              <Navbar />
+              {/* Hide navbar on login page */}
+              {user && <Navbar />}
+
               <Routes>
-                <Route path="/" element={<DashBoard />} />
-                <Route path="/predictions" element={<Predictions />} />
+                {/* Default route → If not logged in → Login page */}
+                <Route
+                  path="/"
+                  element={user ? <DashBoard /> : <Navigate to="/login" />}
+                />
+
+                {/* Predictions page (Protected) */}
+                <Route
+                  path="/predictions"
+                  element={user ? <Predictions /> : <Navigate to="/login" />}
+                />
+
+                {/* Login route */}
+                <Route
+                  path="/login"
+                  element={!user ? <Login /> : <Navigate to="/" />}
+                />
               </Routes>
             </Box>
           </div>
