@@ -80,16 +80,13 @@ AI-Finance-Dashboard/
 
 <h2>🏗️ Project Architecture & Data Flow</h2>
 
-<h3>1️⃣ Architecture Diagram</h3>
+<h3>Architecture Diagram</h3>
 <img src="Images/Architecture.png" alt="Architecture Diagram" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
 
-<h3>2️⃣ Server Architecture</h3>
-<img src="Images/Server Architecture.png" alt="Server Architecture" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
-
-<h3>3️⃣ Data Flow Diagram</h3>
+<h3>Data Flow Diagram</h3>
 <img src="Images/DataFlow.png" alt="Data Flow Diagram" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
 
-<h3>4️⃣ Database Tables</h3>
+<h3>Database Tables</h3>
 <img src="Images/Database Tables.png" alt="Database Tables" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-bottom: 30px;">
 
 <h2>⚡ Getting Started</h2>
