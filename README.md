@@ -14,12 +14,17 @@
 <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin: 20px 0;">
 
   <div style="text-align: center;">
-    <h3>1️⃣ Dashboard Overview</h3>
+    <h3>Login/SignUp</h3>
+    <img src="Images/login.png" alt="Analytics Chart" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+  </div>
+  
+  <div style="text-align: center;">
+    <h3>Dashboard Overview</h3>
     <img src="Images/Dashboard.png" alt="Dashboard Overview" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   </div>
 
   <div style="text-align: center;">
-    <h3>2️⃣ Prediction Analytics</h3>
+    <h3>Prediction Analytics</h3>
     <img src="Images/Prediction.png" alt="Analytics Chart" style="width: 80%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
   </div>
 
